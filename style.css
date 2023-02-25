@@ -1,0 +1,264 @@
+*{
+margin: 0;
+padding: 0;
+list-style-type: none;
+}
+
+
+body {
+font-family: "lato", sans-serif;
+font-style: normal;
+}
+
+header{ /*toda moldura do header*/
+display: flex;
+width: 1917px;
+height:100px;
+border: 1px solid #E0E0E0;
+background: #E0E0E0;
+}
+
+.titulo{ /*controle financeiro*/
+display: flex;
+margin-right: 180px;
+padding-top: 29px;
+color: #333333;
+font-size: 39px;
+margin-left: 15px;
+font-weight: 400;
+white-space: nowrap;
+}
+
+.sub{ /*sub titulos a direita*/
+display: flex;
+justify-content: space-between;
+cursor: pointer;
+border: 1px solid #ffffff;
+padding: 28px;
+padding-top: 24px;
+font-size: 20px;
+list-style-type: none;
+white-space: nowrap;
+background-color: #ffffff;
+color: #333333;
+margin: 15px;
+border: 1px solid;
+position: relative;
+left: 46px;
+}
+
+.forma { /*imagem ao lado do titulo*/
+width: 35px;
+height: 35px;
+margin-top: 20px;
+padding: 10px;
+margin-left: 320px;
+}
+
+#meio { /*tive que usar isso para separar as 3 palavras da classe sub*/
+  display: flex;
+  margin-right: 30px;
+  margin-left: 30px;
+}
+
+
+#barra1 { /*primeira barra da classe sub*/
+  padding-left: 33px;
+  color: #979797;
+}
+
+#barra2 { /*segunda barra da classe sub*/
+  padding-right: 33px;
+  color: #979797;
+}
+
+.box1 { /*tudo que esta na caixa do titulo nova transação*/
+  border: 1px solid #979797;
+  width: 400px;
+  height: 320px;
+  padding-top: 30px;
+  font-size: 18px;
+  justify-content: center;
+  margin-left: 330px;
+  margin-top: 30px;
+  border-radius: 7px;
+  color: #000000;
+  }
+
+.sub-box1 { /*todos os sub titulos da box1 */
+font-size: 14px;
+color: #333333;
+height: 321px;
+}
+
+#input1, #input2, #input3 { /*inputs dentro da box1*/
+  margin-left: 15px;
+  padding-left: 8px;
+  width: 355px;
+  height: 25px;
+}
+
+#sub1, #sub2, #sub3 { /*subs dentro da box1 (tipo de transação, nome da mercadoria e valor)*/
+  margin-left: 5px;
+  padding: 10px;
+  font-size: 16px;
+  color: #333333;
+}
+
+#sub4 { /*sub dentro da box1 (adicionar transação)*/
+  margin: 15px;
+  background-color: #333333;
+  color: #ffffff;
+  font-size: 14px;
+  display: flex;
+  margin-top: 43px;
+  justify-content: center;
+  border-radius: 5px;
+  padding: 6px;
+  cursor: pointer;
+ 
+}
+
+#tittlebox1 { /*titulo da box 1 (nova transação)*/
+  text-align: center;
+  font-size: 21px;
+}
+
+.box2 { /*tudo que esta na caixa do titulo extrato de transações*/
+  border: 1px solid;
+  width: 700px;
+  height: 300px;
+  border: 1px;
+  margin-left: 890px;
+  position: relative;
+  bottom: 351px;
+  }
+ 
+  .box2 ul li { /*extrato de transações*/
+    text-align: center;
+    padding-top: 18px;
+    font-size: 18px;
+    color: #000000;
+  }
+
+  .linha1 { /*mercadoria e valor*/
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    font-size: 14px;
+  }
+  
+  .br1 { /*primeira linha abaixo de mercadoria e valor*/ 
+    width: 700px;
+    border: 1px solid;
+    color: #979797;
+    position: relative;
+    bottom: 16px;
+     }
+
+.linha2 { /*lorem1 e 12.999,99*/
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  font-size: 14px;
+  bottom: 25px;
+  }
+
+  #lorem1 { /*Lorem ipsum dolor sit amet consectetur*/
+    padding-left: 8px;
+  }
+
+  
+  #doze1 { /*R$ 12.999,99*/
+    padding-right: 18px;
+  }
+
+  .br2 { /*primeira linha abaixo de lorem e 12.999,99*/
+    width: 700px;
+    border: 1px solid;
+    color: #979797;
+    position: relative;
+    bottom: 12px;
+  }
+
+  .linha3 { /*quis e R$ 99,99*/
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  font-size: 14px;
+  bottom: 25px;
+  }
+
+  #quis { /*Quis nostrud exercitation*/
+    padding-left: 10px;
+  }
+
+  #noventaenove { /*R$ 99,99*/
+    padding-right: 18px;
+  }
+
+  .br3 { /*primeira linha abaixo de Quis e R$ 99,99*/
+    width: 700px;
+    border: 1px solid;
+    color: #979797;
+    position: relative;
+    bottom: 12px;
+  }
+
+  .linha4 { /*lorem2 e R$ 9,99*/
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  font-size: 14px;
+  bottom: 25px;
+  }
+
+  #lorem2 { /*lorem ipsum*/
+    padding-left: 7px;
+  }
+
+  #nove { /*R$ 9,99*/
+    padding-right: 21px;
+  }
+
+  .br4 { /*primeira linha abaixo de lorem2 e R$ 9,99*/
+    width: 700px;
+    border: 1px solid;
+    color: #979797;
+    position: relative;
+    bottom: 17px;
+  }
+
+  .br5 { /*segunda linha abaixo de lorem2 e R$ 9,99*/ 
+    width: 700px;
+    border: 1px solid;
+    color: #979797;
+    position: relative;
+    bottom: 14px;
+  }
+
+  .linha5 { /*total e R$ 12.909.99*/
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  font-size: 14px;
+  bottom: 25px;
+  }
+
+  #total { /*total*/
+    padding-left: 20px;
+    position: relative;
+    bottom: 5px;
+  }
+
+  #doze2 { /*R$ 12.909,99*/
+    padding-right: 20px;
+  }
+
+  .linha6 { /*[lucro]*/
+  display: flex;
+  position: relative;
+  font-size: 10px;
+  bottom: 25px;
+  left: 638px;
+   }
