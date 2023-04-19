@@ -6,68 +6,93 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="https://use.typekit.net/smh8qxk.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
     <title>Controle financeiro</title>
   </head>
   <body>
-    <header>
-      <!--imagem do site (ao lado do título)-->
-      <div class="forma"><img src="imagens/logo.png" alt="logo" /></div>
-      <!--título-->
-      <div class="titulo">Controle financeiro</div>
-      <!--sub títulos (lado direito)-->
-      <div class="sub">
-        <li id="primeiro"><a href="#"></a>Cadastro de transações</li>
-        <li id="barra1">|</li>
-        <li id="meio"><a href="#"></a>Limpar dados</li>
-        <li id="barra2">|</li>
-        <li id="segundo"><a href="#"></a>Configurações</li>
+    <div class="header">
+      <div class="geral">
+        <div class="itens-one">
+          <div class="logo"><img src="imagens/logo.png" alt="logo" /></div>
+          <h1>Controle financeiro</h1>
+          <span class="material-icons"> menu </span>
+        </div>
+
+        <div class="itens-two">
+          <div class="menu">
+            <a href="#"><li>Cadastro de transações</li></a>
+            <li class="barra">|</li>
+            <a href="#"><li>Limpar dados</li></a>
+          </div>
+        </div>
       </div>
-    </header>
-    <div class="box1">
-      <ul>
-        <li id="tittlebox1">Nova transação</li>
-        <div class="sub-box1">
-          <li id="sub1">Tipo de transação</li>
-          <input id="input1" type="text" placeholder="Compra" />
-          <li id="sub2">Nome da mercadoria</li>
-          <input id="input2" type="text" placeholder="Input" />
-          <li id="sub3">Valor</li>
-          <input id="input3" type="number" placeholder="R$ 0,00" />
-          <li id="sub4">Adicionar transação</li>
-        </div>
-      </ul>
     </div>
-    <div class="box2">
-      <ul>
-        <li>Extrato de Transações</li>
-        <div class="linha1">
-          <li>Mercadoria</li>
-          <li>Valor</li>
+
+    <div class="itens">
+      <!-- BOX 1 -->
+      <div class="box-one">
+        <h1>Nova Transação</h1>
+        <div class="box-itens">
+          <div class="input-content">
+            <p>Tipo de transação</p>
+            <input class="input" type="text" placeholder="compra" />
+          </div>
+          <div class="input-content-1">
+            <p>Nome da mercadoria</p>
+            <input class="input" type="text" placeholder="input" />
+          </div>
+          <div class="input-content">
+            <p>Valor</p>
+            <input class="input" type="text" placeholder="R$ 0,00" />
+          </div>
         </div>
-        <div class="br1"></div>
-        <div class="linha2">
-          <li id="lorem1">+ Lorem ipsum dolor sit amet consectetur</li>
-          <li id="doze1">R$ 12.999,99</li>
+        <div class="btn">
+          <button class="button">Adicionar transação</button>
         </div>
-        <div class="br2"></div>
-        <div class="linha3">
-          <li id="quis">- Quis nostrud exercitation</li>
-          <li id="noventaenove">R$ 99,99</li>
+      </div>
+      <!-- BOX 2 -->
+      <div class="box-two">
+        <h1>Extrato de transações</h1>
+
+        <div class="box-itens-two">
+          <div class="merc-valor">
+            <h3>Mercadoria</h3>
+            <h3>Valor</h3>
+          </div>
+
+          <div class="produto">
+            <div class="product-one">
+              <p id="p3">+</p>
+              <p id="p1">Lorem ipsum dolor sit amet consectetur</p>
+            </div>
+            <p id="p2">R$ 12.999,99</p>
+          </div>
+
+          <div class="artefato">
+            <div class="product-one">
+              <p id="p3">+</p>
+              <p id="a1">Luis nostrud exercitation</p>
+            </div>
+            <p id="a2">R$ 99,99</p>
+          </div>
+
+          <div class="utensilho">
+            <div class="product-one">
+              <p id="p3">+</p>
+              <p id="u1">Lorem ipsum</p>
+            </div>
+            <p id="u2">R$ 9,99</p>
+          </div>
+
+          <div class="total">
+            <p id="t1">Total</p>
+            <p id="t2">R$ 12.909,99</p>
+          </div>
         </div>
-        <div class="br3"></div>
-        <div class="linha4">
-          <li id="lorem2">+ Lorem ipsum</li>
-          <li id="nove">R$ 9,99</li>
-        </div>
-        <div class="br4"></div>
-        <div class="br5"></div>
-        <div class="linha5">
-          <li id="total">Total</li>
-          <li id="doze2">R$ 12.909,99</li>
-        </div>
-        <div class="linha6">[LUCRO]</div>
-      </ul>
+      </div>
     </div>
   </body>
 </html>

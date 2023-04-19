@@ -1,264 +1,328 @@
-*{
-margin: 0;
-padding: 0;
-list-style-type: none;
+@import url("https://fonts.googleapis.com/css2?family= Lato :wght@100;400 & display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  font-family: "Lato", sans-serif;
 }
 
-
-body {
-font-family: "lato", sans-serif;
-font-style: normal;
+.logo {
+  width: 40px;
+  height: 40px;
 }
 
-header{ /*toda moldura do header*/
-display: flex;
-width: 1917px;
-height:100px;
-border: 1px solid #E0E0E0;
-background: #E0E0E0;
-}
-
-.titulo{ /*controle financeiro*/
-display: flex;
-margin-right: 180px;
-padding-top: 29px;
-color: #333333;
-font-size: 39px;
-margin-left: 15px;
-font-weight: 400;
-white-space: nowrap;
-}
-
-.sub{ /*sub titulos a direita*/
-display: flex;
-justify-content: space-between;
-cursor: pointer;
-border: 1px solid #ffffff;
-padding: 28px;
-padding-top: 24px;
-font-size: 20px;
-list-style-type: none;
-white-space: nowrap;
-background-color: #ffffff;
-color: #333333;
-margin: 15px;
-border: 1px solid;
-position: relative;
-left: 46px;
-}
-
-.forma { /*imagem ao lado do titulo*/
-width: 35px;
-height: 35px;
-margin-top: 20px;
-padding: 10px;
-margin-left: 320px;
-}
-
-#meio { /*tive que usar isso para separar as 3 palavras da classe sub*/
+.header {
+  width: 100%;
+  height: 55px;
+  border: 1px solid #e0e0e0;
+  background: #e0e0e0;
   display: flex;
-  margin-right: 30px;
-  margin-left: 30px;
-}
-
-
-#barra1 { /*primeira barra da classe sub*/
-  padding-left: 33px;
-  color: #979797;
-}
-
-#barra2 { /*segunda barra da classe sub*/
-  padding-right: 33px;
-  color: #979797;
-}
-
-.box1 { /*tudo que esta na caixa do titulo nova transação*/
-  border: 1px solid #979797;
-  width: 400px;
-  height: 320px;
-  padding-top: 30px;
-  font-size: 18px;
   justify-content: center;
-  margin-left: 330px;
-  margin-top: 30px;
-  border-radius: 7px;
-  color: #000000;
-  }
-
-.sub-box1 { /*todos os sub titulos da box1 */
-font-size: 14px;
-color: #333333;
-height: 321px;
 }
 
-#input1, #input2, #input3 { /*inputs dentro da box1*/
-  margin-left: 15px;
-  padding-left: 8px;
-  width: 355px;
-  height: 25px;
+.geral {
+  width: 1100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-#sub1, #sub2, #sub3 { /*subs dentro da box1 (tipo de transação, nome da mercadoria e valor)*/
-  margin-left: 5px;
-  padding: 10px;
-  font-size: 16px;
+.geral span {
+  display: none;
+}
+
+.header a {
+  text-decoration: none;
   color: #333333;
 }
 
-#sub4 { /*sub dentro da box1 (adicionar transação)*/
-  margin: 15px;
-  background-color: #333333;
-  color: #ffffff;
-  font-size: 14px;
+h1 {
+  /* título controle financeiro*/
+  color: #333333;
+  font-size: 20px;
+}
+
+.itens-one h1{
+  margin-left: 12px;
+}
+
+.menu {
+  border: 1px solid #ffffff;
+  background-color: #ffffff;
+  font-size: 16px;
+  color: #333333;
   display: flex;
-  margin-top: 43px;
-  justify-content: center;
-  border-radius: 5px;
-  padding: 6px;
-  cursor: pointer;
- 
+  font-size: 14px;
+  white-space: nowrap;
+  padding: 7px;
 }
 
-#tittlebox1 { /*titulo da box 1 (nova transação)*/
-  text-align: center;
-  font-size: 21px;
+.itens-one {
+  display: flex;
+  align-items: center;
 }
 
-.box2 { /*tudo que esta na caixa do titulo extrato de transações*/
+.barra {
+  color: #979797;
+  margin-left: 12px;
+  margin-right: 12px;
+}
+
+.itens {
+  display: flex;
+  max-width: 1100px;
+  margin: 0 auto;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.box-one {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid rgb(0, 0, 0);
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-right: 20px;
+}
+
+.box-itens {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.input-content {
+  width: 100%;
+}
+.input-content-1 {
+  width: 100%;
+}
+
+.box-one p {
+  font-size: 14px;
+}
+
+.box-one h1 {
+  margin-top: 20px;
+  margin-bottom: 21px;
+}
+
+input {
+  height: 32px;
+  margin-bottom: 20px;
+  margin-top: 5px;
+  width: 98.5%;
+  padding-left: 5px;
+  }
+
+.button {
+  background: #333333;
+  border-radius: 4px;
+  width: 100%;
+  border: none;
   border: 1px solid;
-  width: 700px;
-  height: 300px;
-  border: 1px;
-  margin-left: 890px;
-  position: relative;
-  bottom: 351px;
-  }
- 
-  .box2 ul li { /*extrato de transações*/
-    text-align: center;
-    padding-top: 18px;
-    font-size: 18px;
-    color: #000000;
+  color: white;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+.btn {
+  width: 100%;
+}
+
+.box-two {
+  width: 62%;
+  height: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 21px;
+}
+.box-itens-two {
+  width: 100%;
+}
+.merc-valor {
+  font-size: 14px;
+  color: #000000;
+  border-bottom: 1px solid #979797;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 40px;
+  padding-right: 20px;
+  padding-bottom: 6px;
+  margin-top: 40px;
+}
+
+.produto {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #979797;
+  justify-content: space-between;
+}
+
+.product-one {
+  display: flex;
+  align-items: center;
+}
+
+#p1 {
+  font-size: 14px;
+  width: 80%;
+  padding-left: 20px;
+  padding-top: 7px;
+  padding-bottom: 8px;
+}
+
+#p2 {
+  color: #000000;
+  font-size: 14px;
+  padding-right: 20px;
+  padding-top: 7px;
+}
+#p3 {
+  margin-left: 10px;
+}
+
+.artefato {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #979797;
+}
+
+#a1 {
+  color: #000000;
+  font-size: 14px;
+  padding-left: 20px;
+  padding-top: 7px;
+  padding-bottom: 8px;
+}
+
+#a2 {
+  color: #000000;
+  font-size: 14px;
+  padding-right: 20px;
+  padding-top: 7px;
+}
+
+.utensilho {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #979797;
+}
+
+#u1 {
+  color: #000000;
+  font-size: 14px;
+  padding-left: 20px;
+  padding-top: 7px;
+  padding-bottom: 8px;
+}
+
+#u2 {
+  color: #000000;
+  font-size: 14px;
+  padding-right: 20px;
+  padding-top: 7px;
+}
+
+.total {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3px;
+  border-top: 1px solid #979797;
+}
+
+#t1 {
+  color: #000000;
+  font-size: 14px;
+  font-weight: bold;
+  padding-left: 39px;
+  padding-top: 7px;
+  padding-bottom: 8px;
+}
+
+#t2 {
+  color: #000000;
+  font-size: 14px;
+  padding-right: 20px;
+  padding-top: 7px;
+  font-weight: bold;
+}
+
+/* Tablet */
+
+@media screen and (max-width: 768px) {
+  .geral span {
+    display: block;
   }
 
-  .linha1 { /*mercadoria e valor*/
-    display: flex;
+  .menu {
+    display: none;
+  }
+
+  .itens-one {
+    width: 100%;
     justify-content: space-between;
-    padding: 20px;
-    font-size: 14px;
-  }
-  
-  .br1 { /*primeira linha abaixo de mercadoria e valor*/ 
-    width: 700px;
-    border: 1px solid;
-    color: #979797;
-    position: relative;
-    bottom: 16px;
-     }
-
-.linha2 { /*lorem1 e 12.999,99*/
-  display: flex;
-  justify-content: space-between;
-  position: relative;
-  font-size: 14px;
-  bottom: 25px;
   }
 
-  #lorem1 { /*Lorem ipsum dolor sit amet consectetur*/
-    padding-left: 8px;
+  .logo {
+    margin-left: 15px;
   }
 
-  
-  #doze1 { /*R$ 12.999,99*/
-    padding-right: 18px;
+  .material-icons {
+    margin-right: 15px;
   }
 
-  .br2 { /*primeira linha abaixo de lorem e 12.999,99*/
-    width: 700px;
-    border: 1px solid;
-    color: #979797;
-    position: relative;
-    bottom: 12px;
+  .itens {
+    display: block;
+
+  }
+  .box-one {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .box-itens {
+    flex-direction: row;
+  }
+  .input {
+    width: 94%;
+    
   }
 
-  .linha3 { /*quis e R$ 99,99*/
-  display: flex;
-  justify-content: space-between;
-  position: relative;
-  font-size: 14px;
-  bottom: 25px;
+  .input-content-1 {
+    width: 180%;
+    margin-left: 10px;
+  }
+  .button {
+    width: 40%;
+  }
+  .btn {
+    display: flex;
+    justify-content: flex-end;
   }
 
-  #quis { /*Quis nostrud exercitation*/
-    padding-left: 10px;
+  .box-two{
+    width: 95%;
+    margin: auto;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 558px) {
+  .box-itens {
+    flex-direction: column;
+  }
+  .input-content-1 {
+    width: 100%;
+    margin: 0;
+  }
+  .input {
+    width: 99%;
   }
 
-  #noventaenove { /*R$ 99,99*/
-    padding-right: 18px;
-  }
 
-  .br3 { /*primeira linha abaixo de Quis e R$ 99,99*/
-    width: 700px;
-    border: 1px solid;
-    color: #979797;
-    position: relative;
-    bottom: 12px;
-  }
-
-  .linha4 { /*lorem2 e R$ 9,99*/
-  display: flex;
-  justify-content: space-between;
-  position: relative;
-  font-size: 14px;
-  bottom: 25px;
-  }
-
-  #lorem2 { /*lorem ipsum*/
-    padding-left: 7px;
-  }
-
-  #nove { /*R$ 9,99*/
-    padding-right: 21px;
-  }
-
-  .br4 { /*primeira linha abaixo de lorem2 e R$ 9,99*/
-    width: 700px;
-    border: 1px solid;
-    color: #979797;
-    position: relative;
-    bottom: 17px;
-  }
-
-  .br5 { /*segunda linha abaixo de lorem2 e R$ 9,99*/ 
-    width: 700px;
-    border: 1px solid;
-    color: #979797;
-    position: relative;
-    bottom: 14px;
-  }
-
-  .linha5 { /*total e R$ 12.909.99*/
-  display: flex;
-  justify-content: space-between;
-  position: relative;
-  font-size: 14px;
-  bottom: 25px;
-  }
-
-  #total { /*total*/
-    padding-left: 20px;
-    position: relative;
-    bottom: 5px;
-  }
-
-  #doze2 { /*R$ 12.909,99*/
-    padding-right: 20px;
-  }
-
-  .linha6 { /*[lucro]*/
-  display: flex;
-  position: relative;
-  font-size: 10px;
-  bottom: 25px;
-  left: 638px;
-   }
+}
