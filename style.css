@@ -97,9 +97,11 @@ h1 {
   flex-direction: column;
   align-items: center;
 }
+
 .input-content {
   width: 100%;
 }
+
 .input-content-1 {
   width: 100%;
 }
@@ -136,6 +138,7 @@ input {
 .button:hover{
   background: #4b4b4b;
 }
+
 .btn {
   width: 100%;
 }
@@ -148,9 +151,11 @@ input {
   align-items: center;
   padding-top: 21px;
 }
+
 .box-itens-two {
   width: 100%;
 }
+
 .merc-valor {
   font-size: 14px;
   color: #000000;
@@ -285,7 +290,6 @@ input {
 
   .itens {
     display: block;
-
   }
   .box-one {
     width: 90%;
@@ -318,6 +322,7 @@ input {
 
 /* Mobile */
 @media screen and (max-width: 558px) {
+  
   .box-itens {
     flex-direction: column;
   }
@@ -327,8 +332,17 @@ input {
   }
   .input {
     width: 98%;
-
   }
 
+  .box-one{
+    border: none;
+  }
 
+  .box-one h1{
+    display: none;
+  }
+
+  .button{
+    width: 100%;
+  }
 }
